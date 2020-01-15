@@ -2,6 +2,7 @@
 # basic / Array 
 This block merges the inputs into an array. If one of the input is itself an array is will be flatten into the main array
 * Inputs
+* * test
   ** item1
   ** item2
   ** item3
