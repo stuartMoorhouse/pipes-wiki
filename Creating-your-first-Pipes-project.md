@@ -14,3 +14,15 @@ Steps:
 That's it - you've created you first Pipes data transformation graph.
 Now, let's check what this graph does.
 
+Pipes can preview the result of a graph execution. That means you can immediately see how the result of your DHF custom step will look like, without the need to actually execute the DHF flow. You can keep improving the graph until you're happy with the result you see in the Preview.
+
+To run preview, do following:
+
+1. In the upper right corner, click on the "Play" button and a dialog will open.
+2. Select the DB where your source data resides in the "Source Database" dropbox.
+3. Now, in the "Source Collection" dropbox, select the collection name of the documents you want to use as source data for the graph. The "Input" block will use this collection to "feed" the source documents to the next block(s).
+4. Click on "EXECUTE PREVIEW". Below it, a document will show up. This is the result that the "Output" block is producing and that is the content that will be produced when the DHF custom step runs with the code produced by this graph. 
+5. If you want to see what the graph will output for a few more documents from the same collection, check the "Random doc" checkbox and keep clicking on "EXECUTE PREVIEW". You'll see the content changing each time, provided you have more than 1 document in the collection.
+
+This is a very simple transformation. In fact, there is no transformation here since we're just passing to the output whatever we're getting on the input as source documents. To learn how to do some real data transformation, go to the following wiki page: [Transforming data with Pipes]()
+
