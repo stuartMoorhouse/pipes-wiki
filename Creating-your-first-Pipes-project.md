@@ -6,7 +6,7 @@ Steps:
 1. Click on "X" to close the info box
 2. Click on the icon in the upper-left corner to close the dialogue on the left side of the screen
 3. In the upper right corner, click on the "New Page" icon
-4. You'll now see 2 block - "Input" and "Output" on the canvas
+4. You'll now see 2 blocks on the canvas - "Input" and "Output" 
 5. Connect the "input" node of the "Input" block to the "output" node of the "Output" block. 
 
 That's it - you've created you first Pipes data transformation graph.
