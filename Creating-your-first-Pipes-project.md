@@ -1,5 +1,3 @@
-[WORK in PROGRESS]
-
 The following video shows how to create a minimal Pipes project.
 
 ![Animated GIF showing how to create a minimal Pipes project](https://github.com/marklogic-community/pipes/blob/master/wikiAssets/PipesMinimalGraph.gif)
