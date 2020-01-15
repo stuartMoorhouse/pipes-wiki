@@ -7,25 +7,26 @@ You miss a block ?? Don't hesitate to suggest new blocks by creating a new issue
 ***
 
 
+
 # basic / Array 
 This block merges the inputs into an array. If one of the input is itself an array is will be flatten into the main array
-* Inputs
+* **Inputs**
   * item1  
   * item2  
   * item3  
   * item4  
   * item5  
-* Outputs
+* **Outputs**
   * array  
 
 
 # controls / CheckPhoneNumber 
 This check the provided phone number according to the country. It returns the reformatted phone number and the validation status
-* Inputs
+* **Inputs**
   * phoneNumber  
   * countryISO2  
   * Uri  
-* Outputs
+* **Outputs**
   * phoneNumber  
   * countryCode  
   * numberType  
@@ -34,270 +35,270 @@ This check the provided phone number according to the country. It returns the re
 
 # controls / checkRequiredFields* 
 
-* Inputs
+* **Inputs**
   * node  
-* Outputs
+* **Outputs**
   * status  
 
 
 # controls / isInDictionnary* 
 
-* Inputs
+* **Inputs**
   * value  
-* Outputs
+* **Outputs**
   * status  
 
 
 # controls / isDate* 
 
-* Inputs
+* **Inputs**
   * value  
-* Outputs
+* **Outputs**
   * status  
 
 
 # controls / isNumber* 
 
-* Inputs
+* **Inputs**
   * value  
-* Outputs
+* **Outputs**
   * status  
 
 
 # controls / Schematron validation* 
 
-* Inputs
+* **Inputs**
   * doc  
-* Outputs
+* **Outputs**
   * SVRL  
 
 
 # controls / XMLValidate 
 
-* Inputs
+* **Inputs**
   * node  
-* Outputs
+* **Outputs**
   * results  
 
 
 # controls / JsonValidate 
 
-* Inputs
+* **Inputs**
   * node  
   * schema  
-* Outputs
+* **Outputs**
   * results  
 
 
 # cts / Doc 
 
-* Inputs
+* **Inputs**
   * uri  
-* Outputs
+* **Outputs**
   * doc  
 
 
 # cts / ExpertQueryBuilder 
 
-* Inputs
+* **Inputs**
   * v0  
   * v1  
-* Outputs
+* **Outputs**
   * ctsQuery  
 
 
 # cts / jsonPropertyValueQuery 
 
-* Inputs
+* **Inputs**
   * property  
   * value  
-* Outputs
+* **Outputs**
   * query  
 
 
 # cts / collectionQuery 
 
-* Inputs
+* **Inputs**
   * collectionName  
-* Outputs
+* **Outputs**
   * query  
 
 
 # cts / search 
 
-* Inputs
+* **Inputs**
   * query  
-* Outputs
+* **Outputs**
   * results  
 
 
 # cts / orQuery 
 
-* Inputs
+* **Inputs**
   * query1  
   * query2  
   * query3  
   * query4  
-* Outputs
+* **Outputs**
   * query  
 
 
 # cts / andQuery 
 
-* Inputs
+* **Inputs**
   * query1  
   * query2  
   * query3  
   * query4  
-* Outputs
+* **Outputs**
   * query  
 
 
 # date / FormatDateTimeAuto 
 This block formats input datetime to ISO format using predefined formats (momentjs)
-* Inputs
+* **Inputs**
   * inputDateTime  
-* Outputs
+* **Outputs**
   * IsoDateTime  
 
 
 # date / FormatDateAuto 
 This blocks formats the input date to ISO format using MM-DD-YYYY, YYYY-MM-DD, DD/MM/YYYY
-* Inputs
+* **Inputs**
   * inputDate  
-* Outputs
+* **Outputs**
   * IsoDate  
 
 
 # date / FormatDate 
 This blocks formats the input date to ISO format using the provided format
-* Inputs
+* **Inputs**
   * inputDate  
-* Outputs
+* **Outputs**
   * IsoDate  
 
 
 # dhf / declarativeMapper 
 This block applies DHF 5.1 mapping to the input node
-* Inputs
+* **Inputs**
   * node  
-* Outputs
+* **Outputs**
   * mappedNode  
 
 
 # feature / selectCase 
 This block returns one of the inputX value depending on the value2Test input. The selection of inputX is done based on the block configuration (double click)
-* Inputs
+* **Inputs**
   * value2Test  
   * input0  
   * input1  
   * input2  
-* Outputs
+* **Outputs**
   * value  
 
 
 # feature / DistinctValues 
 This block returns the distinct values of a property from the input (can be array or sequence with reasonable size
-* Inputs
+* **Inputs**
   * array  
-* Outputs
+* **Outputs**
   * distinctValues  
 
 
 # feature / Lookup 
 
-* Inputs
+* **Inputs**
   * query  
   * var1  
   * var2  
-* Outputs
+* **Outputs**
   * value  
 
 
 # fn / head 
 
-* Inputs
+* **Inputs**
   * nodes  
-* Outputs
+* **Outputs**
   * node  
 
 
 # fn / doc 
 
-* Inputs
+* **Inputs**
   * uri  
-* Outputs
+* **Outputs**
   * doc  
 
 
 # fn / collection 
 
-* Inputs
+* **Inputs**
   * collectionName  
-* Outputs
+* **Outputs**
   * docs  
 
 
 # fn / baseUri 
 
-* Inputs
+* **Inputs**
   * node  
-* Outputs
+* **Outputs**
   * uri  
 
 
 # fn / count 
 
-* Inputs
+* **Inputs**
   * list  
-* Outputs
+* **Outputs**
   * nbItems  
 
 
 # geo / GeoReproject 
 This block converts geo coordinates from source coordinate system to the target one.
-* Inputs
+* **Inputs**
   * srcCoordinateSystem : Source coordinate system
   * targetCoordinateSystem : Target coordinate system
   * strWKT : Geo shape
-* Outputs
+* **Outputs**
   * strWKT : Converted geo shape
 
 
 # provenance / PROV-O structure 
 This block generates provo triples based on the provided inputs
-* Inputs
+* **Inputs**
   * uri : URI of the source
   * DerivedFrom1 : Optional derived from URI
   * DerivedFrom2 : Optional derived from URI
   * DerivedFrom3 : Optional derived from URI
   * GeneratedBy : Optional generated by URI
   * createdOn : Optional date
-* Outputs
+* **Outputs**
   * PROV-O  
 
 
 # string / String join 
 This block joins the input array of strings using the provided separator
-* Inputs
+* **Inputs**
   * string*  
-* Outputs
+* **Outputs**
   * joinedString  
 
 
 # string / Map values 
 This block maps an input value to another using the configuration of the block (double click)
-* Inputs
+* **Inputs**
   * value  
-* Outputs
+* **Outputs**
   * mappedValue  
 
 
 # string / Split 
 This block splits the input string using the provided char.
-* Inputs
+* **Inputs**
   * string  
-* Outputs
+* **Outputs**
   * v1  
   * v2  
   * v3  
@@ -306,70 +307,70 @@ This block splits the input string using the provided char.
 
 # string / UpperCase 
 
-* Inputs
+* **Inputs**
   * string  
-* Outputs
+* **Outputs**
   * STRING  
 
 
 # string / Highlight 
 This block applies MarkLogic highlight function to the input string
-* Inputs
+* **Inputs**
   * string  
   * query  
   * highlightKeyword  
-* Outputs
+* **Outputs**
   * enrichedString  
 
 
 # string / LowerCase 
 
-* Inputs
+* **Inputs**
   * STRING  
-* Outputs
+* **Outputs**
   * string  
 
 
 # string / EntityEnrichment 
 This block performs entity enrichment on the input string based on a dictionary
-* Inputs
+* **Inputs**
   * string : String to enrich
   * dictionary : URI of a SKOS dictionary
-* Outputs
+* **Outputs**
   * enrichedString : Enriched string
 
 
 # string / uuid 
 This block generates an UUID string
-* Inputs
+* **Inputs**
 
-* Outputs
+* **Outputs**
   * uuid  
 
 
 # transform / ApplyXSLT 
 This block applies the input XSL to the input node. XSL can be a string or the URI in module DB of the XSL
-* Inputs
+* **Inputs**
   * node  
   * xslStr  
   * xslPath  
-* Outputs
+* **Outputs**
   * doc  
 
 
 # transform / Add property 
 
-* Inputs
+* **Inputs**
   * doc  
   * value  
-* Outputs
+* **Outputs**
   * doc  
 
 
 # triples / CreateTriple 
 This block creates a triple using the provided subject, predicate, object
-* Inputs
+* **Inputs**
   * subject  
   * object  
-* Outputs
+* **Outputs**
   * triple  
