@@ -1,4 +1,3 @@
-String as 
 
 # basic / Array 
 This block merges the inputs into an array. If one of the input is itself an array is will be flatten into the main array
@@ -9,11 +8,7 @@ This block merges the inputs into an array. If one of the input is itself an arr
   ** item4
   ** item5
 * Outputs
-  ** item1
-  ** item2
-  ** item3
-  ** item4
-  ** item5
+  ** array
 
 
 # controls / CheckPhoneNumber 
@@ -24,8 +19,9 @@ This check the provided phone number according to the country. It returns the re
   ** Uri
 * Outputs
   ** phoneNumber
-  ** countryISO2
-  ** Uri
+  ** countryCode
+  ** numberType
+  ** qualityResult
 
 
 # controls / checkRequiredFields* 
@@ -33,7 +29,7 @@ This check the provided phone number according to the country. It returns the re
 * Inputs
   ** node
 * Outputs
-  ** node
+  ** status
 
 
 # controls / isInDictionnary* 
@@ -41,7 +37,7 @@ This check the provided phone number according to the country. It returns the re
 * Inputs
   ** value
 * Outputs
-  ** value
+  ** status
 
 
 # controls / isDate* 
@@ -49,7 +45,7 @@ This check the provided phone number according to the country. It returns the re
 * Inputs
   ** value
 * Outputs
-  ** value
+  ** status
 
 
 # controls / isNumber* 
@@ -57,7 +53,7 @@ This check the provided phone number according to the country. It returns the re
 * Inputs
   ** value
 * Outputs
-  ** value
+  ** status
 
 
 # controls / Schematron validation* 
@@ -65,7 +61,7 @@ This check the provided phone number according to the country. It returns the re
 * Inputs
   ** doc
 * Outputs
-  ** doc
+  ** SVRL
 
 
 # controls / XMLValidate 
@@ -73,7 +69,7 @@ This check the provided phone number according to the country. It returns the re
 * Inputs
   ** node
 * Outputs
-  ** node
+  ** results
 
 
 # controls / JsonValidate 
@@ -82,8 +78,7 @@ This check the provided phone number according to the country. It returns the re
   ** node
   ** schema
 * Outputs
-  ** node
-  ** schema
+  ** results
 
 
 # cts / Doc 
@@ -91,7 +86,7 @@ This check the provided phone number according to the country. It returns the re
 * Inputs
   ** uri
 * Outputs
-  ** uri
+  ** doc
 
 
 # cts / ExpertQueryBuilder 
@@ -100,8 +95,7 @@ This check the provided phone number according to the country. It returns the re
   ** v0
   ** v1
 * Outputs
-  ** v0
-  ** v1
+  ** ctsQuery
 
 
 # cts / jsonPropertyValueQuery 
@@ -110,8 +104,7 @@ This check the provided phone number according to the country. It returns the re
   ** property
   ** value
 * Outputs
-  ** property
-  ** value
+  ** query
 
 
 # cts / collectionQuery 
@@ -119,7 +112,7 @@ This check the provided phone number according to the country. It returns the re
 * Inputs
   ** collectionName
 * Outputs
-  ** collectionName
+  ** query
 
 
 # cts / search 
@@ -127,7 +120,7 @@ This check the provided phone number according to the country. It returns the re
 * Inputs
   ** query
 * Outputs
-  ** query
+  ** results
 
 
 # cts / orQuery 
@@ -138,10 +131,7 @@ This check the provided phone number according to the country. It returns the re
   ** query3
   ** query4
 * Outputs
-  ** query1
-  ** query2
-  ** query3
-  ** query4
+  ** query
 
 
 # cts / andQuery 
@@ -152,10 +142,7 @@ This check the provided phone number according to the country. It returns the re
   ** query3
   ** query4
 * Outputs
-  ** query1
-  ** query2
-  ** query3
-  ** query4
+  ** query
 
 
 # date / FormatDateTimeAuto 
@@ -163,7 +150,7 @@ This block formats input datetime to ISO format using predefined formats (moment
 * Inputs
   ** inputDateTime
 * Outputs
-  ** inputDateTime
+  ** IsoDateTime
 
 
 # date / FormatDateAuto 
@@ -171,7 +158,7 @@ This blocks formats the input date to ISO format using MM-DD-YYYY, YYYY-MM-DD, D
 * Inputs
   ** inputDate
 * Outputs
-  ** inputDate
+  ** IsoDate
 
 
 # date / FormatDate 
@@ -179,7 +166,7 @@ This blocks formats the input date to ISO format using the provided format
 * Inputs
   ** inputDate
 * Outputs
-  ** inputDate
+  ** IsoDate
 
 
 # dhf / declarativeMapper 
@@ -187,7 +174,7 @@ This block applies DHF 5.1 mapping to the input node
 * Inputs
   ** node
 * Outputs
-  ** node
+  ** mappedNode
 
 
 # feature / selectCase 
@@ -198,10 +185,7 @@ This block returns one of the inputX value depending on the value2Test input. Th
   ** input1
   ** input2
 * Outputs
-  ** value2Test
-  ** input0
-  ** input1
-  ** input2
+  ** value
 
 
 # feature / DistinctValues 
@@ -209,7 +193,7 @@ This block returns the distinct values of a property from the input (can be arra
 * Inputs
   ** array
 * Outputs
-  ** array
+  ** distinctValues
 
 
 # feature / Lookup 
@@ -219,9 +203,7 @@ This block returns the distinct values of a property from the input (can be arra
   ** var1
   ** var2
 * Outputs
-  ** query
-  ** var1
-  ** var2
+  ** value
 
 
 # fn / head 
@@ -229,7 +211,7 @@ This block returns the distinct values of a property from the input (can be arra
 * Inputs
   ** nodes
 * Outputs
-  ** nodes
+  ** node
 
 
 # fn / doc 
@@ -237,7 +219,7 @@ This block returns the distinct values of a property from the input (can be arra
 * Inputs
   ** uri
 * Outputs
-  ** uri
+  ** doc
 
 
 # fn / collection 
@@ -245,7 +227,7 @@ This block returns the distinct values of a property from the input (can be arra
 * Inputs
   ** collectionName
 * Outputs
-  ** collectionName
+  ** docs
 
 
 # fn / baseUri 
@@ -253,7 +235,7 @@ This block returns the distinct values of a property from the input (can be arra
 * Inputs
   ** node
 * Outputs
-  ** node
+  ** uri
 
 
 # fn / count 
@@ -261,7 +243,7 @@ This block returns the distinct values of a property from the input (can be arra
 * Inputs
   ** list
 * Outputs
-  ** list
+  ** nbItems
 
 
 # geo / GeoReproject 
@@ -271,8 +253,6 @@ This block converts geo coordinates from source coordinate system to the target 
   ** targetCoordinateSystem
   ** strWKT
 * Outputs
-  ** srcCoordinateSystem
-  ** targetCoordinateSystem
   ** strWKT
 
 
@@ -286,12 +266,7 @@ This block generates provo triples based on the provided inputs
   ** GeneratedBy
   ** createdOn
 * Outputs
-  ** uri
-  ** DerivedFrom1
-  ** DerivedFrom2
-  ** DerivedFrom3
-  ** GeneratedBy
-  ** createdOn
+  ** PROV-O
 
 
 # string / String join 
@@ -299,7 +274,7 @@ This block joins the input array of strings using the provided separator
 * Inputs
   ** string*
 * Outputs
-  ** string*
+  ** joinedString
 
 
 # string / Map values 
@@ -307,7 +282,7 @@ This block maps an input value to another using the configuration of the block (
 * Inputs
   ** value
 * Outputs
-  ** value
+  ** mappedValue
 
 
 # string / Split 
@@ -315,7 +290,10 @@ This block splits the input string using the provided char.
 * Inputs
   ** string
 * Outputs
-  ** string
+  ** v1
+  ** v2
+  ** v3
+  ** array
 
 
 # string / UpperCase 
@@ -323,7 +301,7 @@ This block splits the input string using the provided char.
 * Inputs
   ** string
 * Outputs
-  ** string
+  ** STRING
 
 
 # string / Highlight 
@@ -333,9 +311,7 @@ This block applies MarkLogic highlight function to the input string
   ** query
   ** highlightKeyword
 * Outputs
-  ** string
-  ** query
-  ** highlightKeyword
+  ** enrichedString
 
 
 # string / LowerCase 
@@ -343,7 +319,7 @@ This block applies MarkLogic highlight function to the input string
 * Inputs
   ** STRING
 * Outputs
-  ** STRING
+  ** string
 
 
 # string / EntityEnrichment 
@@ -352,8 +328,7 @@ This block performs entity enrichment on the input string based on a dictionary
   ** string
   ** dictionary
 * Outputs
-  ** string
-  ** dictionary
+  ** enrichedString
 
 
 # string / uuid 
@@ -361,7 +336,7 @@ This block generates an UUID string
 * Inputs
 
 * Outputs
-
+  ** uuid
 
 
 # transform / ApplyXSLT 
@@ -371,9 +346,7 @@ This block applies the input XSL to the input node. XSL can be a string or the U
   ** xslStr
   ** xslPath
 * Outputs
-  ** node
-  ** xslStr
-  ** xslPath
+  ** doc
 
 
 # transform / Add property 
@@ -383,7 +356,6 @@ This block applies the input XSL to the input node. XSL can be a string or the U
   ** value
 * Outputs
   ** doc
-  ** value
 
 
 # triples / CreateTriple 
@@ -392,5 +364,4 @@ This block creates a triple using the provided subject, predicate, object
   ** subject
   ** object
 * Outputs
-  ** subject
-  ** object
+  ** triple
