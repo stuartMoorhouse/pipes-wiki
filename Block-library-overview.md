@@ -1,5 +1,9 @@
 This section introduces the blocks available in the Pipes library.
+
 *Blocks with * in the name are not available yet.*
+
+You miss a block ?? Don't hesitate to suggest new blocks by creating a new issues.
+***
 
 
 # basic / Array 
