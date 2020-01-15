@@ -1,5 +1,5 @@
 This section introduces the blocks available in the Pipes library.
-__Blocks with * in the name are not available yet.  __
+__ Blocks with * in the name are not available yet.
 
 
 # basic / Array 
