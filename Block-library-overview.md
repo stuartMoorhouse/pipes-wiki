@@ -1,3 +1,6 @@
+This section introduces the blocks available in the Pipes library.
+__Blocks with * in the name are not available yet.  
+
 
 # basic / Array 
 This block merges the inputs into an array. If one of the input is itself an array is will be flatten into the main array
