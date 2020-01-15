@@ -22,5 +22,5 @@ To run preview, do following:
 4. Click on "EXECUTE PREVIEW". Below it, a document will show up. This is the result that the "Output" block is producing and that is the content that will be produced when the DHF custom step runs with the code produced by this graph. 
 5. If you want to see what the graph will output for a few more documents from the same collection, check the "Random doc" checkbox and keep clicking on "EXECUTE PREVIEW". You'll see the content changing each time, provided you have more than 1 document in the collection.
 
-This is a very simple transformation. In fact, there is no transformation here since we're just passing to the output whatever we're getting on the input as source documents. To learn how to do some real data transformation, go to the following wiki page: [Transforming data with Pipes]()
+This is a very simple transformation. In fact, there is no transformation here since we're just passing to the output whatever we're getting on the input as source documents. To learn how to do some real data transformation, go to the following wiki page: [Transforming data with Pipes](https://github.com/marklogic-community/pipes/wiki/Transforming-data-with-Pipes)
 
