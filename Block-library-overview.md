@@ -1,12 +1,3 @@
-This section introduces the blocks available in the Pipes default library.
-
-You miss a block ?? Don't hesitate to suggest new blocks by creating a new issues.
-
-*Blocks with * in the name are not available yet.*
-
-***
-
-
 
 # basic / Array 
 This block merges the inputs into an array. If one of the input is itself an array is will be flatten into the main array
@@ -16,6 +7,8 @@ This block merges the inputs into an array. If one of the input is itself an arr
   * item3  
   * item4  
   * item5  
+* **Block settings ("Widgets")**
+  * None
 * **Outputs**
   * array  
 
@@ -26,6 +19,10 @@ This check the provided phone number according to the country. It returns the re
   * phoneNumber  
   * countryISO2  
   * Uri  
+* **Block settings ("Widgets")**
+  * outputFormat  
+  * defaultCountry  
+  * Output if invalid ?  
 * **Outputs**
   * phoneNumber  
   * countryCode  
@@ -37,6 +34,8 @@ This check the provided phone number according to the country. It returns the re
 
 * **Inputs**
   * node  
+* **Block settings ("Widgets")**
+  * None
 * **Outputs**
   * status  
 
@@ -45,6 +44,8 @@ This check the provided phone number according to the country. It returns the re
 
 * **Inputs**
   * value  
+* **Block settings ("Widgets")**
+  * None
 * **Outputs**
   * status  
 
@@ -53,6 +54,8 @@ This check the provided phone number according to the country. It returns the re
 
 * **Inputs**
   * value  
+* **Block settings ("Widgets")**
+  * None
 * **Outputs**
   * status  
 
@@ -61,6 +64,8 @@ This check the provided phone number according to the country. It returns the re
 
 * **Inputs**
   * value  
+* **Block settings ("Widgets")**
+  * None
 * **Outputs**
   * status  
 
@@ -69,6 +74,8 @@ This check the provided phone number according to the country. It returns the re
 
 * **Inputs**
   * doc  
+* **Block settings ("Widgets")**
+  * None
 * **Outputs**
   * SVRL  
 
@@ -77,6 +84,8 @@ This check the provided phone number according to the country. It returns the re
 
 * **Inputs**
   * node  
+* **Block settings ("Widgets")**
+  * None
 * **Outputs**
   * results  
 
@@ -86,6 +95,8 @@ This check the provided phone number according to the country. It returns the re
 * **Inputs**
   * node  
   * schema  
+* **Block settings ("Widgets")**
+  * None
 * **Outputs**
   * results  
 
@@ -94,6 +105,8 @@ This check the provided phone number according to the country. It returns the re
 
 * **Inputs**
   * uri  
+* **Block settings ("Widgets")**
+  * None
 * **Outputs**
   * doc  
 
@@ -103,6 +116,8 @@ This check the provided phone number according to the country. It returns the re
 * **Inputs**
   * v0  
   * v1  
+* **Block settings ("Widgets")**
+  * nbInputs  
 * **Outputs**
   * ctsQuery  
 
@@ -112,6 +127,14 @@ This check the provided phone number according to the country. It returns the re
 * **Inputs**
   * property  
   * value  
+* **Block settings ("Widgets")**
+  * case  
+  * diacritic  
+  * punctuation  
+  * whitespace  
+  * stemming  
+  * wildcard  
+  * exact  
 * **Outputs**
   * query  
 
@@ -120,6 +143,8 @@ This check the provided phone number according to the country. It returns the re
 
 * **Inputs**
   * collectionName  
+* **Block settings ("Widgets")**
+  * None
 * **Outputs**
   * query  
 
@@ -128,6 +153,8 @@ This check the provided phone number according to the country. It returns the re
 
 * **Inputs**
   * query  
+* **Block settings ("Widgets")**
+  * None
 * **Outputs**
   * results  
 
@@ -139,6 +166,8 @@ This check the provided phone number according to the country. It returns the re
   * query2  
   * query3  
   * query4  
+* **Block settings ("Widgets")**
+  * None
 * **Outputs**
   * query  
 
@@ -150,6 +179,8 @@ This check the provided phone number according to the country. It returns the re
   * query2  
   * query3  
   * query4  
+* **Block settings ("Widgets")**
+  * None
 * **Outputs**
   * query  
 
@@ -158,6 +189,8 @@ This check the provided phone number according to the country. It returns the re
 This block formats input datetime to ISO format using predefined formats (momentjs)
 * **Inputs**
   * inputDateTime  
+* **Block settings ("Widgets")**
+  * None
 * **Outputs**
   * IsoDateTime  
 
@@ -166,6 +199,8 @@ This block formats input datetime to ISO format using predefined formats (moment
 This blocks formats the input date to ISO format using MM-DD-YYYY, YYYY-MM-DD, DD/MM/YYYY
 * **Inputs**
   * inputDate  
+* **Block settings ("Widgets")**
+  * None
 * **Outputs**
   * IsoDate  
 
@@ -174,6 +209,8 @@ This blocks formats the input date to ISO format using MM-DD-YYYY, YYYY-MM-DD, D
 This blocks formats the input date to ISO format using the provided format
 * **Inputs**
   * inputDate  
+* **Block settings ("Widgets")**
+  * format  
 * **Outputs**
   * IsoDate  
 
@@ -182,6 +219,10 @@ This blocks formats the input date to ISO format using the provided format
 This block applies DHF 5.1 mapping to the input node
 * **Inputs**
   * node  
+* **Block settings ("Widgets")**
+  * MappingName  
+  * MappingVersion  
+  * WithInstanceRoot  
 * **Outputs**
   * mappedNode  
 
@@ -193,6 +234,8 @@ This block returns one of the inputX value depending on the value2Test input. Th
   * input0  
   * input1  
   * input2  
+* **Block settings ("Widgets")**
+  * nbInputs  
 * **Outputs**
   * value  
 
@@ -201,6 +244,8 @@ This block returns one of the inputX value depending on the value2Test input. Th
 This block returns the distinct values of a property from the input (can be array or sequence with reasonable size
 * **Inputs**
   * array  
+* **Block settings ("Widgets")**
+  * xpath  
 * **Outputs**
   * distinctValues  
 
@@ -211,6 +256,9 @@ This block returns the distinct values of a property from the input (can be arra
   * query  
   * var1  
   * var2  
+* **Block settings ("Widgets")**
+  * query  
+  * valuePath  
 * **Outputs**
   * value  
 
@@ -219,6 +267,8 @@ This block returns the distinct values of a property from the input (can be arra
 
 * **Inputs**
   * nodes  
+* **Block settings ("Widgets")**
+  * None
 * **Outputs**
   * node  
 
@@ -227,6 +277,8 @@ This block returns the distinct values of a property from the input (can be arra
 
 * **Inputs**
   * uri  
+* **Block settings ("Widgets")**
+  * None
 * **Outputs**
   * doc  
 
@@ -235,6 +287,8 @@ This block returns the distinct values of a property from the input (can be arra
 
 * **Inputs**
   * collectionName  
+* **Block settings ("Widgets")**
+  * None
 * **Outputs**
   * docs  
 
@@ -243,6 +297,8 @@ This block returns the distinct values of a property from the input (can be arra
 
 * **Inputs**
   * node  
+* **Block settings ("Widgets")**
+  * None
 * **Outputs**
   * uri  
 
@@ -251,6 +307,8 @@ This block returns the distinct values of a property from the input (can be arra
 
 * **Inputs**
   * list  
+* **Block settings ("Widgets")**
+  * None
 * **Outputs**
   * nbItems  
 
@@ -261,6 +319,8 @@ This block converts geo coordinates from source coordinate system to the target 
   * srcCoordinateSystem : Source coordinate system
   * targetCoordinateSystem : Target coordinate system
   * strWKT : Geo shape
+* **Block settings ("Widgets")**
+  * None
 * **Outputs**
   * strWKT : Converted geo shape
 
@@ -274,6 +334,8 @@ This block generates provo triples based on the provided inputs
   * DerivedFrom3 : Optional derived from URI
   * GeneratedBy : Optional generated by URI
   * createdOn : Optional date
+* **Block settings ("Widgets")**
+  * None
 * **Outputs**
   * PROV-O  
 
@@ -282,6 +344,8 @@ This block generates provo triples based on the provided inputs
 This block joins the input array of strings using the provided separator
 * **Inputs**
   * string*  
+* **Block settings ("Widgets")**
+  * None
 * **Outputs**
   * joinedString  
 
@@ -290,6 +354,8 @@ This block joins the input array of strings using the provided separator
 This block maps an input value to another using the configuration of the block (double click)
 * **Inputs**
   * value  
+* **Block settings ("Widgets")**
+  * castOutput  
 * **Outputs**
   * mappedValue  
 
@@ -298,6 +364,8 @@ This block maps an input value to another using the configuration of the block (
 This block splits the input string using the provided char.
 * **Inputs**
   * string  
+* **Block settings ("Widgets")**
+  * splitChar  
 * **Outputs**
   * v1  
   * v2  
@@ -309,6 +377,8 @@ This block splits the input string using the provided char.
 
 * **Inputs**
   * string  
+* **Block settings ("Widgets")**
+  * None
 * **Outputs**
   * STRING  
 
@@ -319,6 +389,8 @@ This block applies MarkLogic highlight function to the input string
   * string  
   * query  
   * highlightKeyword  
+* **Block settings ("Widgets")**
+  * None
 * **Outputs**
   * enrichedString  
 
@@ -327,6 +399,8 @@ This block applies MarkLogic highlight function to the input string
 
 * **Inputs**
   * STRING  
+* **Block settings ("Widgets")**
+  * None
 * **Outputs**
   * string  
 
@@ -336,6 +410,8 @@ This block performs entity enrichment on the input string based on a dictionary
 * **Inputs**
   * string : String to enrich
   * dictionary : URI of a SKOS dictionary
+* **Block settings ("Widgets")**
+  * None
 * **Outputs**
   * enrichedString : Enriched string
 
@@ -344,6 +420,8 @@ This block performs entity enrichment on the input string based on a dictionary
 This block generates an UUID string
 * **Inputs**
 
+* **Block settings ("Widgets")**
+  * prefix : This value can be added as a prefix to the UUID
 * **Outputs**
   * uuid  
 
@@ -354,6 +432,8 @@ This block applies the input XSL to the input node. XSL can be a string or the U
   * node  
   * xslStr  
   * xslPath  
+* **Block settings ("Widgets")**
+  * None
 * **Outputs**
   * doc  
 
@@ -363,6 +443,8 @@ This block applies the input XSL to the input node. XSL can be a string or the U
 * **Inputs**
   * doc  
   * value  
+* **Block settings ("Widgets")**
+  * None
 * **Outputs**
   * doc  
 
@@ -372,5 +454,9 @@ This block creates a triple using the provided subject, predicate, object
 * **Inputs**
   * subject  
   * object  
+* **Block settings ("Widgets")**
+  * subjectIsIRI  
+  * predicate  
+  * objectIsIRI  
 * **Outputs**
   * triple  
