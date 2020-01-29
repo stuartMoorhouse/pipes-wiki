@@ -1,0 +1,1 @@
+[[/images/CreateURIs.gif|Video describing how to Change the URI of the output document]]
