@@ -1,0 +1,1 @@
+[[/images/AutomaticallyConvertDates.gif|Video describing how to convert dates to ISO format]]
