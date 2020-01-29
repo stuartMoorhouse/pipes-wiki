@@ -1,0 +1,1 @@
+[[/images/AutomaticallyConvertDates.gif|Video describing how to create entity blocks based on entity definitions on DHF]]
