@@ -1,0 +1,1 @@
+[[/images/CreateMultipleEntities.gif|Video describing how to create multiple documents on the output]]
