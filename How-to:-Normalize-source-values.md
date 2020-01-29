@@ -1,0 +1,1 @@
+[[/images/NormalizeValues.gif|Video describing how to normalize source values]]
