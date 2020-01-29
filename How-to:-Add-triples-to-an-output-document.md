@@ -1,1 +1,1 @@
-[[/images/AddTriplesToEnvelope.gif.gif|Video describing how to add triples to output document in Pipes]]
+[[/images/AddTriplesToEnvelope.gif|Video describing how to add triples to output document in Pipes]]
