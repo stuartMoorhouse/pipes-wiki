@@ -1,5 +1,5 @@
 Subgraphs are here to help you.
-If you have a list of documents coming from a source or from a search (for ex.), you can apply the same processing to all individual items by using a subgraph.
+If you have a list of documents coming from a source or from a search (for ex.), you can apply the same processing to all individual items of this list by using a subgraph.
 
 ## How to create a subgraph
 Go to the menu (right click), and select graph/Subgraph. It will add en empty block to your graph drawing.
