@@ -8,7 +8,9 @@ Go to the menu (right click), and select graph/Subgraph. It will add en empty bl
 Just double-click the subgraph block and you will zoom into this subgraph. The whole canvas is now the subgraph drawing.
 
 You can now add input blocks (graph/Input) and output blocks (graph/Outputs). 
-The first input you add will be an item of the list to process, the first output you add must be for the processed item.
+The first input you add will be an item of the list to process, the first output you add must be for the processed item. It means that if you plug a list of item to the first input of the subgraph, in the first Input in the subgraph you 
+
+All the other inputs/outputs can be anything
 
 You can now design your processing graph by connecting the input(s) with other blocks and to the output(s), as usual.
 
