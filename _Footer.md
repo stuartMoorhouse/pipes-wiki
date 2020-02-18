@@ -1,1 +1,1 @@
-Click on the video for larger size.
+Click the video for larger size.
