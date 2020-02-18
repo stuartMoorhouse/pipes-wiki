@@ -1,1 +1,1 @@
-[[/images/CreateMultipleEntities.gif|Video describing how to create multiple documents on the output]]
+<a href="./images/CreateMultipleEntities.gif" target="_blank">[[/images/CreateMultipleEntities.gif|Video describing how to create multiple documents on the output]]</a>
