@@ -1,1 +1,1 @@
-[[/images/NormalizeValues.gif|Video describing how to normalize source values]]
+<a href="./images/NormalizeValues.gif" target="_blank">[[/images/NormalizeValues.gif|Video describing how to normalize source values]]</a>
