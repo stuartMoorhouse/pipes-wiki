@@ -1,1 +1,1 @@
-[[/images/CreateSourceBlocks.gif|Video describing how to create source blocks based on documents in a collection]]
+<a href="./images/CreateSourceBlocks.gif" target="_blank">[[/images/CreateSourceBlocks.gif|Video describing how to create source blocks based on documents in a collection]]</a>
