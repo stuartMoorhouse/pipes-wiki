@@ -1,1 +1,1 @@
-<a href="./images/AutomaticallyConvertDates.gif" target="_blank">[[/images/AutomaticallyConvertDates.gif|Video describing how to create entity blocks based on entity definitions on DHF]]</a>
+<a href="./images/CreateEntityBlocks.gif" target="_blank">[[/images/CreateEntityBlocks.gif|Video describing how to create entity blocks based on entity definitions on DHF]]</a>
