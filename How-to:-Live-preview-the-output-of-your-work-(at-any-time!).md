@@ -1,1 +1,1 @@
-[[/images/LivePreviewTheTransformation.gif.gif|Video describing how to live preview the transformation]]
+[[/images/LivePreviewTheTransformation.gif|Video describing how to live preview the transformation]]
