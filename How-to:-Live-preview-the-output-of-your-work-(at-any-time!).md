@@ -1,1 +1,1 @@
-[[/images/CreateUniqueId.gif|Video describing how to add triples to output document in Pipes]]
+[[/images/LivePreviewTheTransformation.gif.gif|Video describing how to live preview the transformation]]
