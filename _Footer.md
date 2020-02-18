@@ -1,1 +1,1 @@
-Open the video in a new browser tab for bigger size.
+Click on the video for larger size.
