@@ -4,7 +4,7 @@
 
 This page describe the upcoming native Pipes Compiler to JavaScript. 
 
-The goal of this 'subproject; is achieve high performance code execution, where a Pipes project runs at a (nearly) comparable speed as handcrafted JavaScript.  The goal is to make Pipes ready for high performance production use.
+The goal of this 'subproject' is achieve high performance code execution, where a Pipes project runs at a (nearly) comparable speed as handcrafted JavaScript.  The goal is to make Pipes ready for high performance production use.
 
 ## How it works
 
