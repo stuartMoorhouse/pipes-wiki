@@ -47,7 +47,7 @@ The compilation process is executed as follows:
 - Then it tries to find the `dhf/output` block as `finalState`. If it cannot find this block or it finds multiple blocks compilation is aborted. 
 - It builds a graph for flow analysis
 - It determines all possible paths from `startState` to `finalState`.
-- It removes all deadnodes. That are nodes which are unreachable from `startState` to `finalState`
+- It removes all dead nodes. That are nodes which are unreachable from `startState` to `finalState`
 - It checks that there is no cycle in the remaining graph. If there is a cycle, compilation is aborted. 
 - It checks that all blocks support code generation (see below). If one of the blocks does not support code generation, compilation is aborted. 
 - Based on the flow graph and paths, it determines in which order the blocks need to be executed. 
