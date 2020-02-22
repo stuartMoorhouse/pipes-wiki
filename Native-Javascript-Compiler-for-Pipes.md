@@ -63,6 +63,7 @@ Every block which supports code generation should implement the following functi
 
 Here:
 
+- The return value is an array of strings with generated code. 
 - `tempVarPrefix` is a string which this block need to use as prefix if it generates variables. This ensure the variables within the block are unique.
 - `inputVariables` are the names of the variables to use as input, in the form of:
 
@@ -79,7 +80,35 @@ Here:
 - `propertiesWidgets` will contain the value of the properties and widgets in the form of: 
 
 ```
-{ properties: [ { name: "propertyName", value: "propertyValue",... }....],
-   widgets: [ { name: "widgetName", value: "widgetValue"}, ...]
+{ properties: { widgetKey: "widgetValue", widgetKey2: widgetValue,... },
+   widgets: { propertyKey: "propertyValue", propertyKey2: "propertyValue2",....}
 ```
+## Example code generation function
 
+Here is an example:
+
+````
+  stringTemplate.prototype.onCodeGeneration = function(tempVarPrefix,inputVariables,outputVariables,propertiesWidgets) {
+    let code = [];
+    let template = propertiesWidgets.template;
+    if ( "input0" in inputVariables ) {
+      template = template.replace("v1", inputVariables.input0);
+    }
+    if ( "input1" in inputVariables ) {
+      template = template.replace("v2", inputVariables.input1);
+    }
+    if ("input2" in  inputVariables ) {
+      template = template.replace("v3", inputVariables.input2);
+    }
+    if ( "v4" in propertiesWidgets ) {
+      code.push("let "+tempVarPrefix+"v4="+propertiesWidgets.v4+";");
+      template = template.replace("v4", tempVarPrefix + "v4")
+    }
+    if ( "v5" in propertiesWidgets ) {
+      code.push("let "+tempVarPrefix+"v5="+propertiesWidgets.v5+";");
+      template = template.replace("v4", tempVarPrefix + "v5")
+    }
+    code.push("let "+outputVariable[0]+" = eval(`"+template+"`);");
+    return code;
+  };
+```
