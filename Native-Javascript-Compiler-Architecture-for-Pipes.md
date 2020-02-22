@@ -51,7 +51,7 @@ The compilation process is executed as follows:
 - It checks that there is no cycle in the remaining graph. If there is a cycle, compilation is aborted. 
 - It checks that all blocks support code generation (see below). If one of the blocks does not support code generation, compilation is aborted. 
 - Based on the flow graph and paths, it determines in which order the blocks need to be executed. 
-- Based on this order, it generates code for each block. 
+- Based on this order, it generates code for each block. During this process the compiler maintains the context in terms of input and output variables and properties/widgets. 
 
 ## Code generation support for blocks
 
