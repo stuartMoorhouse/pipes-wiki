@@ -44,7 +44,42 @@ Typically if there are errors, `sourceCode` will be empty, and `errors` will be 
 The compilation process is executed as follows:
 
 - First it tries to find the `dhf/input` block as `startState`. If it cannot find this block or it finds multiple blocks compilation is aborted. 
-- First it tries to find the `dhf/output` block as `finalState`. If it cannot find this block or it finds multiple blocks compilation is aborted. 
+- Then it tries to find the `dhf/output` block as `finalState`. If it cannot find this block or it finds multiple blocks compilation is aborted. 
 - It builds a graph for flow analysis
-- It determines all possible paths from s
+- It determines all possible paths from `startState` to `finalState`.
+- It removes all deadnodes. That are nodes which are unreachable from `startState` to `finalState`
+- It checks that there is no cycle in the remaining graph. If there is a cycle, compilation is aborted. 
+- It checks that all blocks support code generation (see below). If one of the blocks does not support code generation, compilation is aborted. 
+- Based on the flow graph and paths, it determines in which order the blocks need to be executed. 
+- Based on this order, it generates code for each block. 
+
+## Code generation support for blocks
+
+Every block which supports code generation should implement the following function:
+
+```
+<name>.prototype.onCodeGeneration = function(tempVarPrefix,inputVariables,outputVariables,propertiesWidgets)
+```
+
+Here:
+
+- `tempVarPrefix` is a string which this block need to use as prefix if it generates variables. This ensure the variables within the block are unique.
+- `inputVariables` are the names of the variables to use as input, in the form of:
+
+```
+{ input0 : "variableName",
+  input1 : "variableName2",
+  ...
+}
+```
+  - So, the alternative for `this.getInputData(0)` is `inputVariables.input0`. For this construction is chosen so that during code generation you can easily check a input is connnected via `"input0" in inputVariables` which will be `false` if input 0 is not connected. 
+
+  - The alternative for `this.setOutputData(0)` is `outputVariable.output0`
+
+- `propertiesWidgets` will contain the value of the properties and widgets in the form of: 
+
+```
+{ properties: [ { name: "propertyName", value: "propertyValue",... }....],
+   widgets: [ { name: "widgetName", value: "widgetValue"}, ...]
+```
 
