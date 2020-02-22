@@ -87,10 +87,10 @@ Here:
 
 Here is an example:
 
-````
+```
   stringTemplate.prototype.onCodeGeneration = function(tempVarPrefix,inputVariables,outputVariables,propertiesWidgets) {
     let code = [];
-    let template = propertiesWidgets.template;
+    let template = propertiesWidgets.widgets.template;
     if ( "input0" in inputVariables ) {
       template = template.replace("v1", inputVariables.input0);
     }
@@ -108,7 +108,42 @@ Here is an example:
       code.push("let "+tempVarPrefix+"v5="+propertiesWidgets.v5+";");
       template = template.replace("v4", tempVarPrefix + "v5")
     }
-    code.push("let "+outputVariable[0]+" = eval(`"+template+"`);");
+    code.push("let "+outputVariables.output0+" = eval(`"+template+"`);");
     return code;
   };
+```
+
+This will produce in our example:
+
+```
+// Start code for string/Templating - nodeId = 14
+let var_14_0_newString = eval(`/final/DAMO/${var_17_0_rowNr}.json`);
+```
+
+And this:
+
+```
+ xpathBlock.prototype.onCodeGeneration = function(tempVarPrefix,inputVariables,outputVariables,propertiesWidgets) {
+    let code = [];
+    let namespaces = propertiesWidgets.widgets.namespaces;
+    let ns = {};
+    if ( namespaces && namespaces.trim().length > 0 ) {
+      const nstokens = namepaces.trim().split(",");
+      if ( nstokens.length % 2 === 0 ) {
+        for ( let i = 0 ; i < nstokens.length ; i+=2 ) {
+          ns[nstokens[i].trim()] = nstokens[i+1].trim();
+        }
+      }
+    }
+    let nsString = JSON.stringify(ns);
+    code.push("let "+outputVariables.output0+" = "+inputVariables.input0+"[0].xpath('"+propertiesWidgets.widgets.xpath+"',"+nsString+");");
+    return code;
+  };
+```
+
+Will produce:
+
+```
+// Start code for transform/xpath - nodeId = 6
+let var_6_0_nodes = var_5_0_instancefeatureMember[0].xpath('fn:name()',{});
 ```
