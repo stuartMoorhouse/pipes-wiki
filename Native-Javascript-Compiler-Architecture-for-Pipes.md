@@ -100,12 +100,12 @@ Here is an example:
     if ("input2" in  inputVariables ) {
       template = template.replace("v3", inputVariables.input2);
     }
-    if ( "v4" in propertiesWidgets ) {
-      code.push("let "+tempVarPrefix+"v4="+propertiesWidgets.v4+";");
+    if ( "v4" in propertiesWidgets.widgets ) {
+      code.push("let "+tempVarPrefix+"v4="+propertiesWidgets.widgets.v4+";");
       template = template.replace("v4", tempVarPrefix + "v4")
     }
-    if ( "v5" in propertiesWidgets ) {
-      code.push("let "+tempVarPrefix+"v5="+propertiesWidgets.v5+";");
+    if ( "v5" in propertiesWidgets.widgets ) {
+      code.push("let "+tempVarPrefix+"v5="+propertiesWidgets.widgets.v5+";");
       template = template.replace("v4", tempVarPrefix + "v5")
     }
     code.push("let "+outputVariables.output0+" = eval(`"+template+"`);");
