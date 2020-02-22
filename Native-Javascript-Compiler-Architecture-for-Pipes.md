@@ -25,7 +25,7 @@ Graphs can be compiled to native JavaScript only if the graph:
 
 The `vppBackendService` POST service will get an extra `action` called `compileToJavaScript`. The request body will contain the JSON graph. 
 
-We need to compile server side, because their we can have access to user defined blocks in `user.sjs`.
+We need to compile server side, because there we can have access to user defined blocks in `user.sjs`.
 
 This service returns a JSON in the form of: 
 
